@@ -80,7 +80,46 @@
   --shadow-glow: 0 0 80px -20px oklch(1 0 0 / 0.15);
 }
 
-.dark { color-scheme: dark; }
+:root { color-scheme: dark; }
+
+.light {
+  color-scheme: light;
+
+  --background: oklch(0.985 0.002 270);
+  --foreground: oklch(0.16 0.005 270);
+  --surface: oklch(0.965 0.002 270);
+  --surface-elevated: oklch(0.99 0.001 270);
+  --hairline: oklch(0 0 0 / 10%);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0.005 270);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0.005 270);
+
+  --primary: oklch(0.16 0.005 270);
+  --primary-foreground: oklch(0.985 0.002 270);
+  --secondary: oklch(0.93 0.003 270);
+  --secondary-foreground: oklch(0.16 0.005 270);
+  --muted: oklch(0.94 0.003 270);
+  --muted-foreground: oklch(0.42 0.008 270);
+  --accent: oklch(0.93 0.003 270);
+  --accent-foreground: oklch(0.16 0.005 270);
+  --border: oklch(0 0 0 / 10%);
+  --input: oklch(0 0 0 / 14%);
+  --ring: oklch(0.25 0.005 270);
+
+  --gradient-fade: linear-gradient(180deg, transparent, oklch(0.985 0.002 270));
+  --gradient-radial: radial-gradient(1200px 600px at 50% -10%, oklch(0.85 0.01 270 / 0.6), transparent 60%);
+  --gradient-text: linear-gradient(180deg, oklch(0.12 0.005 270) 0%, oklch(0.38 0.008 270) 100%);
+  --gradient-card: linear-gradient(180deg, oklch(1 0 0), oklch(0.965 0.002 270));
+
+  --shadow-soft: 0 1px 0 oklch(0 0 0 / 0.04) inset, 0 20px 40px -24px oklch(0 0 0 / 0.15);
+  --shadow-glow: 0 0 80px -20px oklch(0 0 0 / 0.1);
+}
+
+.light .glass {
+  background: oklch(1 0 0 / 0.7);
+}
 
 @layer base {
   * { border-color: var(--color-border); }
